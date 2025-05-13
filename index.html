@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Belleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Tienda de Belleza</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito">Carrito (<span id="carrito-cantidad">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Descubre lo mejor en belleza</h2>
+                <p>Productos de alta calidad para realzar tu belleza natural.</p>
+                <a href="#productos" class="button">Ver Productos</a>
+            </div>
+        </section>
+
+        <section id="productos" class="productos-section">
+            <h2>Nuestros Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="imagen1.jpg" alt="Producto 1">
+                    <h3>Nombre del Producto 1</h3>
+                    <p class="precio">$25.00</p>
+                    <button class="agregar-carrito" data-id="1" data-nombre="Nombre del Producto 1" data-precio="25.00">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagen2.jpg" alt="Producto 2">
+                    <h3>Nombre del Producto 2</h3>
+                    <p class="precio">$30.00</p>
+                    <button class="agregar-carrito" data-id="2" data-nombre="Nombre del Producto 2" data-precio="30.00">Agregar al carrito</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="carrito" class="carrito-section">
+            <h2>Tu Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                </ul>
+            <p id="total-carrito">Total: $0.00</p>
+            <button class="button">Finalizar Compra</button>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? ¡No dudes en contactarnos!</p>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo Electrónico">
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit" class="button">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tu Tienda de Belleza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
